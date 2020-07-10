@@ -1,8 +1,17 @@
-#include <unistd.h> 
-int main()
+#include <unistd.h>
+
+void ft_putchar(char c);
+
+void ft_putchar(char c)  {
+	write (1, &c, 1);
+}
+int main (){
+	char ch;
+	ch= '0';
+		while(ch <= '9') 
 {
-	char  number = '0';
-	while (number < '9')
-	return(0);
-	
+	ft_putchar(ch);
+	ch++;
+}
+return (0);
 }
