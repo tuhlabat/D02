@@ -3,30 +3,20 @@
 #include <unistd.h>
 
 void ft_print_comb(void)
-{	int a, b, c, }
-
 {
-	char a = '0';
-	char b = '0';
-	char c = '0';
-	ft_putchar(',');
-
-	while (a < '9')
+	int a;
+	int b;
+	int c;
+	for (a = '0';a <= '9'; ++a)
 	{
-		while (b < '9')
+		for (b = '0';b <= '9'; ++b)
 		{
-			while (c < '9')
+			for (c = '0';c <= '9'; ++c)
 			{
-				if (a < b && b < c){
-					print(a, b, c);
-				}
-				c++;
+				ft_putchar(a);
+				ft_putchar(b);
+				ft_putchar(c);
 			}
-			c = '0';
-			b++;
 		}
-		b = '0';
-		a++;
 	}
-	return (0);
 }

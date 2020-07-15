@@ -7,8 +7,10 @@ void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-int main (){
-	char n;
+
+void ft_is_negative(int n);
+	int main (){
+		char n;
 	if(n < 0)
 	{
 		ft_putchar('N');
@@ -16,6 +18,6 @@ int main (){
 	else
 	{ 
 		ft_putchar('P');
-	}
+	} 
 	return (0);
 }
