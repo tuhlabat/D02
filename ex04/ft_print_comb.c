@@ -4,19 +4,26 @@
 
 void ft_print_comb(void)
 {
-	int a;
-	int b;
-	int c;
-	for (a = '0';a <= '9'; ++a)
+	int a = '0';
+	int b = '0';
+	int c ='0';
+	
+	while (a <= '9')
 	{
-		for (b = '0';b <= '9'; ++b)
+		while (b <= '9')
 		{
-			for (c = '0';c <= '9'; ++c)
+			while (c <= '9')
 			{
-				ft_putchar(a);
-				ft_putchar(b);
-				ft_putchar(c);
-			}
+				if (a < b && b < c)
+				{
+					printf("%d\n", a, b, c);
+				c++;
+				}
 		}
+			c = '0';
+			b++;
+	}
+		b = '0';
+		a++;
 	}
 }
